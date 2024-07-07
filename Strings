@@ -1,0 +1,59 @@
+#include<stdio.h>  
+#include <string.h>    
+int main(){    
+  char ch[11]={'j', 'a', 'v', 'a', 't', 'p', 'o', 'i', 'n', 't', '\0'};    
+   char ch2[11]="javatpoint";    
+    
+   printf("Char Array Value is: %s\n", ch);    
+   printf("String Literal Value is: %s\n", ch2);    
+ return 0;    
+}    
+
+//traversing a string
+//counting the number of vowels in a string.
+
+#include<stdio.h>  
+void main ()  
+{  
+    char s[11] = "javatpoint";  
+    int i = 0;   
+    int count = 0;  
+    while(i<11)  
+    {  
+        if(s[i]=='a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'u' || s[i] == 'o')  
+        {  
+            count ++;  
+        }  
+        i++;  
+    }  
+    printf("The number of vowels %d",count);  
+}  
+
+//USING NULL CHARACTER.
+
+#include<stdio.h>  
+void main ()  
+{  
+    char s[11] = "javatpoint";  
+    int i = 0;   
+    int count = 0;  
+    while(s[i] != NULL)  
+    {  
+        if(s[i]=='a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'u' || s[i] == 'o')  
+        {  
+            count ++;  
+        }  
+        i++;  
+    }  
+    printf("The number of vowels %d",count);  
+}  
+
+//pointers with strings.
+
+#include<stdio.h>  
+void main ()  
+{  
+    char s[11] = "javatpoint";  
+    char *p = s; // pointer p is pointing to string s.   
+    printf("%s",p); // the string javatpoint is printed if we print p.  
+}  
